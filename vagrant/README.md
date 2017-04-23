@@ -1,9 +1,13 @@
 # Solenoid-Vagrant
-#####Vagrant for Solenoid application demo
-#####Author: Karthik Kumaravel
+
+##### Vagrant for Solenoid application demo
+
+##### Author: Karthik Kumaravel
+
 ##### Contact: Please use the issues page to ask questions or open bugs and feature requests.
 
 ### Overview
+
 This is a Vagrant box set up to demo the Solenoid application. This Vagrant uses two virtualbox VMs, an IOS-XRv image and an Ubuntu/trusty64 image. The plumbing and demo functions are brought up through bash scripts to allow you to use the Solenoid application without hassle, and demo it to others.
 
 ![Solenoid Vagrant Diagram](SolenoidDiagram.png)
@@ -82,14 +86,14 @@ This Vagrant environment has 4 locations:
 
 This is how to access each of these components.
 
-####XR bash
+#### XR bash
 From the vagrant folder on your laptop:
 
     vagrant ssh xrv
 
 XR CLI and Solenoid is accessed in from XR bash
 
-####XR CLI
+#### XR CLI
 From XR Bash (see instructions above):
 
     ssh 10.1.1.5
@@ -97,7 +101,7 @@ From XR Bash (see instructions above):
 password: vagrant
 
 
-####Container running Solenoid
+#### Container running Solenoid
 From your laptop's vagrant folder:
 
     ssh -p 58822 ubuntu@localhost
@@ -114,7 +118,7 @@ To see the website running, enter the following from the container (see instruct
     screen -r website
 
 
-####Ubuntu Devbox
+#### Ubuntu Devbox
 From the vagrant folder:
 
     vagrant ssh devbox
